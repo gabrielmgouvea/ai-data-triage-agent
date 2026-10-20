@@ -6,7 +6,7 @@
 [![Live Demo](https://img.shields.io/badge/Demo-Acessar%20PulseTriage-FF5722?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-data-triage-agent.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16+-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.5--Flash-4285F4?style=flat-square&logo=google)](https://ai.google.dev/)
+[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-3.5--Flash-4285F4?style=flat-square&logo=google)](https://ai.google.dev/)
 [![Strava API](https://img.shields.io/badge/Strava-API%20v3-FC4C02?style=flat-square&logo=strava&logoColor=white)](https://developers.strava.com/)
 
 ---
