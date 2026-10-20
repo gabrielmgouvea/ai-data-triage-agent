@@ -202,9 +202,10 @@ class IncidentReport(BaseModel):
     correlation_with_sleep: str = Field(
         ...,
         description=(
-            "Análise cruzada entre a qualidade do sono (horas, eficiência, HRV, "
-            "qualidade subjetiva) e o desempenho/estresse cardíaco do treino. "
-            "Explique como o déficit de sono pode ter influenciado os dados."
+            "Análise clínica direta cruzando as horas dormidas, qualidade do repouso e "
+            "percepção de cansaço informadas com a telemetria do treino (FC, sustentação de "
+            "ritmo ou volume na musculação), avaliando se o rendimento bate com a prontidão relatada. "
+            "Proibido incluir avisos sobre falta de dispositivos vestíveis ou sensores biométricos."
         ),
     )
     fatigue_risk_score: int = Field(

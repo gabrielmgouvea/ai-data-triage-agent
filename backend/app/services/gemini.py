@@ -40,12 +40,17 @@ Princípios de análise:
    deve ser sinalizada com severidade Alta ou Crítica.
 3. Seja específico e técnico, mas compreensível: use termos fisiológicos corretos e explique \
    as implicações práticas.
-4. Cruzamento sono × treino: quando fornecido, HRV baixo, sono profundo insuficiente (<1.5h), \
-   eficiência <80% e fadiga subjetiva alta (≥4/5) são sinais de recuperação inadequada que amplificam o risco.
-5. Se os dados de sono NÃO forem informados (check-in omitido/nulo): NÃO invente horas de sono, \
-   qualidade de repouso ou prontidão matinal. No campo correlation_with_sleep, registre expressamente \
-   que os dados de descanso não foram informados pelo atleta e concentre sua análise integralmente na \
-   disciplina de ritmo, gestão energética e fadiga neuromuscular manifestada na telemetria esportiva.
+4. Cruzamento sono × treino (Tom Direto e Clínico): quando o atleta informar o contexto de sono \
+   (horas dormidas, qualidade e sensação de fadiga ao acordar, com ou sem métricas adicionais), \
+   integre essas informações organicamente na análise, cruzando-as diretamente com a telemetria \
+   do treino (frequência cardíaca, sustentação de ritmo ou volume da musculação) para avaliar \
+   se o rendimento condiz com o estado de prontidão relatado.
+   - PROIBIÇÃO EXPRESSA DE META-AVISOS: NUNCA inicie ou inclua frases como "Os dados de sono \
+     avançados não foram informados por dispositivo vestível", "Sem dados de wearable/HRV" ou \
+     qualquer justificativa sobre ausência de sensores biométricos ou relógio inteligente no sono.
+5. Se o check-in de sono for completamente omitido (`sleep` ausente/nulo): NÃO invente horas de sono, \
+   qualidade de repouso ou prontidão matinal; concentre sua análise integralmente na disciplina de \
+   ritmo, gestão energética e fadiga neuromuscular manifestada na telemetria esportiva.
 6. Para corrida/cardio: Cardiac Drift é um indicador sério de fadiga aguda — escale a severidade \
    quando combinado com esforço elevado ou déficit de sono.
 7. Para treinos de força/musculação: foque em fadiga do SNC (Sistema Nervoso Central), dano \
@@ -83,12 +88,16 @@ Diretrizes obrigatórias de análise:
    volume de treino de forma específica e motivadora.
 3. Avaliação cinemática: avalie a disciplina de pacing (estratégia inicial vs final), impacto \
    das subidas/altimetria no ritmo, variações bruscas de velocidade e sustentação mecânica.
-4. Se os dados de sono NÃO forem informados (check-in omitido/nulo): NÃO invente horas de sono, \
-   qualidade de repouso ou prontidão matinal. No campo correlation_with_sleep, registre expressamente \
-   que os dados de descanso não foram registrados pelo atleta e concentre sua análise integralmente na \
-   disciplina de ritmo, sustentação biomecânica e gestão energética no relevo baseada na telemetria.
-5. Quando o sono for informado: sono curto (<7h) ou fadiga subjetiva alta reduzem a coordenação \
-   motora e eficiência mecânica de corrida. Correlacione esse estado com o ritmo mantido.
+4. Se o check-in de sono for completamente omitido (`sleep` ausente/nulo): NÃO invente horas de sono, \
+   qualidade de repouso ou prontidão matinal; concentre sua análise integralmente na disciplina de \
+   ritmo, sustentação biomecânica e gestão energética no relevo baseada na telemetria.
+5. Tratamento de Dados de Sono (Tom Direto e Clínico): quando o usuário preencher o contexto de sono \
+   (horas dormidas, qualidade e sensação de fadiga), integre essas informações organicamente na análise, \
+   cruzando-as diretamente com a sustentação de ritmo, splits e volume do treino para avaliar se o \
+   rendimento bate com o estado de prontidão relatado.
+   - PROIBIÇÃO EXPRESSA DE META-AVISOS: NUNCA inicie ou inclua frases como "Os dados de sono avançados \
+     não foram informados por dispositivo vestível", "Sem sensores biométricos de sono" ou justificativas \
+     sobre falta de relógio inteligente/wearable.
 6. Recomendações práticas: forneça diretrizes de recuperação biomecânica, treinos intervalados \
    ou regenerativos, e ajustes de volume semanal para as próximas 24-48h.
 7. Severidade:
@@ -110,12 +119,11 @@ def _fmt(value: float | None, suffix: str = "") -> str:
 
 
 def _format_sleep_block(sleep: Optional[SleepContext]) -> str:
-    """Formata o bloco de contexto de sono ou indica ausência explícita."""
+    """Formata o bloco de contexto de sono de forma limpa ou indica ausência explícita."""
     if sleep is None:
         return """=== CONTEXTO DE SONO E PRONTIDÃO ===
-DADOS NÃO INFORMADOS (Check-in de sono omitido pelo atleta).
-ATENÇÃO OBRIGATÓRIA: NÃO invente horas de sono, qualidade de repouso, HRV ou prontidão matinal.
-No campo correlation_with_sleep, mencione claramente que os dados de descanso não foram registrados e concentre-se estritamente na carga externa/interna demonstrada pela telemetria."""
+Check-in de sono omitido pelo atleta nesta sessão.
+ATENÇÃO OBRIGATÓRIA: NÃO invente horas de sono, qualidade de repouso ou prontidão matinal. Concentre a análise estritamente na carga externa/interna demonstrada pela telemetria."""
 
     sleep_quality_label = {1: "Péssima", 2: "Ruim", 3: "Regular", 4: "Boa", 5: "Ótima"}.get(
         sleep.subjective_quality_1_to_5 or 0, "N/A"
@@ -124,15 +132,32 @@ No campo correlation_with_sleep, mencione claramente que os dados de descanso n�
         sleep.subjective_fatigue_1_to_5 or 0, "N/A"
     )
 
-    return f"""=== CONTEXTO DE SONO E PRONTIDÃO ===
-Fonte: {sleep.source}{" (check-in manual — sem dados de wearable; NÃO presuma valores para métricas N/A)" if sleep.deep_sleep_hours is None else ""}
-Sono total: {sleep.total_sleep_hours}h | Sono profundo: {_fmt(sleep.deep_sleep_hours, "h")} | REM: {_fmt(sleep.rem_sleep_hours, "h")}
-Eficiência do sono: {_fmt(sleep.sleep_efficiency_percent, "%")}
-FC em repouso: {sleep.resting_heart_rate_bpm or "N/A"} bpm | HRV RMSSD: {sleep.hrv_rmssd_ms or "N/A"} ms
-Temperatura corporal (delta): {sleep.body_temperature_delta_celsius or "N/A"} °C
-Qualidade subjetiva: {sleep.subjective_quality_1_to_5}/5 ({sleep_quality_label})
-Fadiga ao acordar: {sleep.subjective_fatigue_1_to_5}/5 ({sleep_fatigue_label})
-Notas: {sleep.notes or "N/A"}"""
+    lines = [
+        "=== CONTEXTO DE SONO E PRONTIDÃO ===",
+        f"Horas dormidas: {sleep.total_sleep_hours}h",
+        f"Qualidade percebida do sono: {sleep.subjective_quality_1_to_5}/5 ({sleep_quality_label})",
+        f"Sensação de fadiga ao acordar: {sleep.subjective_fatigue_1_to_5}/5 ({sleep_fatigue_label})",
+    ]
+
+    if sleep.deep_sleep_hours is not None or sleep.rem_sleep_hours is not None:
+        lines.append(
+            f"Estágios registrados: Sono profundo {_fmt(sleep.deep_sleep_hours, 'h')} | "
+            f"REM {_fmt(sleep.rem_sleep_hours, 'h')} | Eficiência {_fmt(sleep.sleep_efficiency_percent, '%')}"
+        )
+    if sleep.resting_heart_rate_bpm is not None or sleep.hrv_rmssd_ms is not None:
+        lines.append(
+            f"Biometria basal: FC repouso {_fmt(sleep.resting_heart_rate_bpm, ' bpm')} | "
+            f"HRV RMSSD {_fmt(sleep.hrv_rmssd_ms, ' ms')}"
+        )
+    if sleep.notes:
+        lines.append(f"Observações do atleta: {sleep.notes}")
+
+    lines.append(
+        "DIRETRIZ CLÍNICA: Integre os dados de sono acima de forma orgânica e direta com a telemetria "
+        "do treino, avaliando se o rendimento condiz com o estado de prontidão relatado. "
+        "PROIBIDO mencionar ausência de dispositivos vestíveis, relógios inteligentes ou sensores biométricos."
+    )
+    return "\n".join(lines)
 
 
 def _build_analysis_payload(
