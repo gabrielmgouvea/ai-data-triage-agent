@@ -55,6 +55,7 @@ app.include_router(strava.router)
 
 # ── Health check ─────────────────────────────────────────────────────────────
 @app.get("/health", tags=["System"])
+@app.get("/api/health", tags=["System"])
 async def health_check() -> dict[str, str]:
     """Verificação de saúde básica para monitoramento e CI."""
     return {"status": "ok", "service": "pulsetriage-backend", "version": app.version}

@@ -207,7 +207,7 @@ function HeroSection({
 
 export default function HomePage() {
   const [mode, setMode] = useState<AppMode>("demo");
-  const [backendOnline, setBackendOnline] = useState(false);
+  const [backendOnline, setBackendOnline] = useState(true);
   const [sleepData, setSleepData] = useState<SleepCheckin | null>(null);
   const [demoSleepMode, setDemoSleepMode] = useState<"mock" | "custom" | "none">("mock");
   const [demoType, setDemoType] = useState<"run" | "strength">("run");

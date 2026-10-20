@@ -24,6 +24,10 @@ const nextConfig: NextConfig = {
         destination: `${localBackendUrl}/api/triage/:path*`,
       },
       {
+        source: "/api/health",
+        destination: `${localBackendUrl}/api/health`,
+      },
+      {
         source: "/health",
         destination: `${localBackendUrl}/health`,
       },

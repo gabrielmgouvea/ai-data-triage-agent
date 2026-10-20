@@ -24,12 +24,24 @@
       "dest": "/api/index.py"
     },
     {
+      "src": "/api/health",
+      "dest": "/api/index.py"
+    },
+    {
       "src": "/health",
       "dest": "/api/index.py"
     },
     {
+      "src": "/_next/(.*)",
+      "dest": "/frontend/_next/$1"
+    },
+    {
+      "src": "/frontend/(.*)",
+      "dest": "/frontend/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "frontend/$1"
+      "dest": "/frontend/$1"
     }
   ]
 }

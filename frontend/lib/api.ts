@@ -1,7 +1,8 @@
 /**
  * PulseTriage — Cliente de API para comunicação com o backend FastAPI.
- * - Em desenvolvimento local (localhost): utiliza http://localhost:8000 (ou NEXT_PUBLIC_API_URL)
- * - Em produção unificada na Vercel (*.vercel.app): utiliza caminho relativo "" (mesma origem)
+ * Utiliza caminhos relativos (/api/* e /health), roteados automaticamente:
+ * - Na Vercel: pelo vercel.json para a função serverless api/index.py
+ * - Em desenvolvimento local: pelos rewrites do next.config.ts para o FastAPI local
  */
 
 import type {
@@ -16,18 +17,7 @@ import type {
 } from "./types";
 
 export function getApiBase(): string {
-  if (process.env.NEXT_PUBLIC_API_URL) {
-    return process.env.NEXT_PUBLIC_API_URL.replace(/\/+$/, "");
-  }
-  if (typeof window !== "undefined") {
-    const host = window.location.hostname;
-    if (host === "localhost" || host === "127.0.0.1") {
-      return "http://localhost:8000";
-    }
-    // Em produção na Vercel, o backend serverless responde na mesma origem (/api/*)
-    return "";
-  }
-  return "http://localhost:8000";
+  return "";
 }
 
 export class ApiError extends Error {
@@ -64,11 +54,19 @@ async function fetchJson<T>(
   return res.json() as Promise<T>;
 }
 
-/** Verifica se o backend FastAPI (local ou Vercel Serverless) está online. */
+/** Verifica se o backend FastAPI (local ou Vercel Serverless) está online via rota relativa. */
 export async function checkBackendHealth(): Promise<boolean> {
   try {
-    const res = await fetch(`${getApiBase()}/health`, { method: "GET" });
-    return res.ok;
+    const res = await fetch("/health", {
+      method: "GET",
+      cache: "no-store",
+    });
+    if (res.ok) return true;
+    const fallback = await fetch("/api/health", {
+      method: "GET",
+      cache: "no-store",
+    });
+    return fallback.ok;
   } catch {
     return false;
   }
