@@ -1,59 +1,60 @@
-# PulseTriage
+# ⚡ PulseTriage
 
-> Plataforma Web de Telemetria Esportiva & Análise de Prontidão com IA
+> **Plataforma Web de Telemetria Esportiva & Análise Fisiológica com Inteligência Artificial.**  
+> Ingestão de dados brutos do Strava, triagem determinística de carga interna e diagnósticos gerados com o Google Gemini.
 
-## Estrutura do Monorepo
+[![Live Demo](https://img.shields.io/badge/Demo-Acessar%20PulseTriage-FF5722?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-data-triage-agent.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-16+-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.5--Flash-4285F4?style=flat-square&logo=google)](https://ai.google.dev/)
+[![Strava API](https://img.shields.io/badge/Strava-API%20v3-FC4C02?style=flat-square&logo=strava&logoColor=white)](https://developers.strava.com/)
 
-```
-pulsetriage/
-├── backend/          # FastAPI + Python
-│   ├── app/
-│   │   ├── main.py        # Aplicação FastAPI
-│   │   ├── config.py      # Configurações (Pydantic Settings)
-│   │   ├── models.py      # Modelos de domínio (Pydantic v2)
-│   │   └── routers/
-│   │       └── demo.py    # GET /api/v1/demo
-│   ├── mock_activity.json # Dados de treino + sono mockados
-│   ├── requirements.txt
-│   ├── run.py             # Entrada Uvicorn
-│   └── .env.example
-└── frontend/         # Next.js 14+ (Fase 3)
-```
+---
 
-## Backend — Setup Rápido
+## 🚀 Experimente Online (Sem Instalação)
 
-```bash
-cd backend
-python -m venv .venv
-.venv\Scripts\activate          # Windows
-# source .venv/bin/activate     # Linux/Mac
-pip install -r requirements.txt
-cp .env.example .env            # Edite com suas chaves
-python run.py
-```
+A aplicação está publicada e funcional em produção na Vercel:
 
-API disponível em: http://localhost:8000
-- Documentação interativa: http://localhost:8000/docs
-- Demo endpoint: http://localhost:8000/api/v1/demo
-- Health check: http://localhost:8000/health
+👉 **[https://ai-data-triage-agent.vercel.app](https://ai-data-triage-agent.vercel.app)**
 
-## Frontend — Setup Rápido (Fase 3)
+*Conecte sua conta do Strava para carregar suas atividades reais instantaneamente ou utilize os dados demonstrativos.*
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+---
 
-Frontend disponível em: http://localhost:3000
+## 🎯 Sobre o Projeto
 
-## Fases de Desenvolvimento
+O **PulseTriage** preenche a lacuna entre a telemetria esportiva bruta (frequência cardíaca segundo a segundo, pace, cadência, elevação) e a tomada de decisão do atleta. 
 
-| Fase | Status | Descrição |
-|------|--------|-----------|
-| 1 | ✅ Concluída | Fundação Backend & Mock Estruturado |
-| 2 | ✅ Concluída | Motor de Triagem Determinístico & Gemini |
-| 3 | ✅ Concluída | Fundação Frontend & Boilerplate |
-| 4 | ⏳ Pendente | Dashboard, Gráficos Recharts e Check-in |
-| 5 | ⏳ Pendente | Integração Strava OAuth |
-| 6 | ⏳ Pendente | Polimento e Deploy |
+Em vez de exibir apenas gráficos estáticos, a plataforma cruza marcadores fisiológicos determinísticos com a capacidade analítica de modelos de linguagem (Google Gemini) para responder às perguntas centrais de qualquer planejamento: **"Qual foi a carga real dessa sessão?"**, **"Houve desacoplamento cardíaco?"** e **"O treino gerou adaptação positiva ou estresse excessivo?"**.
+
+---
+
+## ✨ Principais Funcionalidades
+
+* **Integração OAuth 2.0 com Strava:** Autenticação dinâmica e ingestão de atividades recentes e fluxos de telemetria brutos (*streams* de tempo, FC, velocidade e altitude).
+* **Diagnóstico Fisiológico com IA:**
+  * **Com Frequência Cardíaca:** Cálculo de Fator de Eficiência (EF), desacoplamento aeróbio (drift), zonas de intensidade e impacto no sistema cardiovascular.
+  * **Modo Cinemático (Sem Sensor Cardíaco):** Detecção automática de treinos sem monitor cardíaco, avaliando split de ritmo, regularidade de cadência e custo mecânico do desnível (+D).
+* **Contexto de Recuperação e Sono (Opcional):** Integração orgânica de percepção subjetiva de esforço, horas de sono e fadiga basal no laudo da IA.
+* **Comparador Head-to-Head (H2H):**
+  * Duelo lado a lado entre treinos de mesma modalidade.
+  * Cálculo determinístico de deltas ($\Delta\text{EF}\%$, $\Delta\text{Pace}\%$, $\Delta\text{FC}$).
+  * Sparklines sobrepostas para comparação visual da sustentação de esforço ao longo da sessão.
+* **Persistência Híbrida & Cache Eficiente:**
+  * Camada de banco de dados SQLite assíncrono para respostas em milissegundos sem repetição de requisições externas.
+  * Armazenamento resiliente em `localStorage` para navegação instantânea no dispositivo do atleta.
+* **Card de Compartilhamento em Alta Resolução (PNG):**
+  * Exportação de cartões gráficos com layout *Dark Minimalist* em proporções 4:5 (Stories/Feed) e 1:1 (Quadrado).
+  * Grid adaptativo inteligente: destaca Pace/Distância em corridas e Séries/Densidade em treinos de força.
+  * Botões de download em alta nitidez (`pixelRatio: 3`) e cópia direta para a área de transferência.
+
+---
+
+## 🛠️ Arquitetura & Tecnologias
+
+A aplicação utiliza arquitetura unificada e 100% *serverless* hospedada na Vercel:
+
+* **Frontend:** [Next.js](https://nextjs.org/) (App Router), [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), [Lucide Icons](https://lucide.dev/), [html-to-image](https://github.com/bubkoo/html-to-image).
+* **Backend:** [FastAPI](https://fastapi.tiangolo.com/), [Pydantic v2](https://docs.pydantic.dev/), [SQLAlchemy](https://www.sqlalchemy.org/) + [aiosqlite](https://github.com/omnilib/aiosqlite).
+* **Inteligência Artificial:** [Google Gemini API](https://ai.google.dev/) com modelagem de prompts clínicos e validação estruturada.
+* **Infraestrutura:** Unificação via `vercel.json` e ponte ASGI (`api/index.py`) para execução de rotas FastAPI sob o runtime Serverless Python.
