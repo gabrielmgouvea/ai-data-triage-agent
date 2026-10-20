@@ -13,7 +13,7 @@
 
 ## 🚀 Experimente Online (Sem Instalação)
 
-A aplicação está publicada e funcional em produção na Vercel:
+A aplicação está publicada e operacional em produção na Vercel:
 
 👉 **[https://ai-data-triage-agent.vercel.app](https://ai-data-triage-agent.vercel.app)**
 
@@ -23,9 +23,9 @@ A aplicação está publicada e funcional em produção na Vercel:
 
 ## 🎯 Sobre o Projeto
 
-O **PulseTriage** preenche a lacuna entre a telemetria esportiva bruta (frequência cardíaca segundo a segundo, pace, cadência, elevação) e a tomada de decisão do atleta. 
+O **PulseTriage** preenche a lacuna entre a telemetria esportiva bruta (frequência cardíaca segundo a segundo, pace, cadência, elevação) e a tomada de decisão do atleta.
 
-Em vez de exibir apenas gráficos estáticos, a plataforma cruza marcadores fisiológicos determinísticos com a capacidade analítica de modelos de linguagem (Google Gemini) para responder às perguntas centrais de qualquer planejamento: **"Qual foi a carga real dessa sessão?"**, **"Houve desacoplamento cardíaco?"** e **"O treino gerou adaptação positiva ou estresse excessivo?"**.
+Em vez de apenas renderizar gráficos estáticos, a plataforma cruza marcadores fisiológicos determinísticos com a capacidade analítica do modelo **Google Gemini 3.5 Flash Lite** para responder às perguntas centrais de qualquer planejamento: **"Qual foi a carga real dessa sessão?"**, **"Houve desacoplamento cardíaco?"** e **"O treino gerou adaptação positiva ou estresse excessivo?"**.
 
 ---
 
@@ -38,14 +38,14 @@ Em vez de exibir apenas gráficos estáticos, a plataforma cruza marcadores fisi
 * **Contexto de Recuperação e Sono (Opcional):** Integração orgânica de percepção subjetiva de esforço, horas de sono e fadiga basal no laudo da IA.
 * **Comparador Head-to-Head (H2H):**
   * Duelo lado a lado entre treinos de mesma modalidade.
-  * Cálculo determinístico de deltas ($\Delta\text{EF}\%$, $\Delta\text{Pace}\%$, $\Delta\text{FC}$).
+  * Cálculo determinístico de deltas (ΔEF%, ΔPace%, ΔFC).
   * Sparklines sobrepostas para comparação visual da sustentação de esforço ao longo da sessão.
 * **Persistência Híbrida & Cache Eficiente:**
-  * Camada de banco de dados SQLite assíncrono para respostas em milissegundos sem repetição de requisições externas.
+  * Camada de banco de dados SQLite assíncrono para respostas em milissegundos sem repetição desnecessária de requisições externas.
   * Armazenamento resiliente em `localStorage` para navegação instantânea no dispositivo do atleta.
 * **Card de Compartilhamento em Alta Resolução (PNG):**
   * Exportação de cartões gráficos com layout *Dark Minimalist* em proporções 4:5 (Stories/Feed) e 1:1 (Quadrado).
-  * Grid adaptativo inteligente: destaca Pace/Distância em corridas e Séries/Densidade em treinos de força.
+  * Grid adaptativo inteligente: destaca Pace/Distância em corridas e Séries/Densidade em treinos de força (Musculação).
   * Botões de download em alta nitidez (`pixelRatio: 3`) e cópia direta para a área de transferência.
 
 ---
@@ -56,5 +56,66 @@ A aplicação utiliza arquitetura unificada e 100% *serverless* hospedada na Ver
 
 * **Frontend:** [Next.js](https://nextjs.org/) (App Router), [React](https://react.dev/), [Tailwind CSS](https://tailwindcss.com/), [Lucide Icons](https://lucide.dev/), [html-to-image](https://github.com/bubkoo/html-to-image).
 * **Backend:** [FastAPI](https://fastapi.tiangolo.com/), [Pydantic v2](https://docs.pydantic.dev/), [SQLAlchemy](https://www.sqlalchemy.org/) + [aiosqlite](https://github.com/omnilib/aiosqlite).
-* **Inteligência Artificial:** [Google Gemini API](https://ai.google.dev/) com modelagem de prompts clínicos e validação estruturada.
-* **Infraestrutura:** Unificação via `vercel.json` e ponte ASGI (`api/index.py`) para execução de rotas FastAPI sob o runtime Serverless Python.
+* **Inteligência Artificial:** [Google Gemini API](https://ai.google.dev/) (`gemini-3.5-flash-lite`) com validação estruturada.
+* **Infraestrutura:** Unificação via `vercel.json` e ponte ASGI (`api/index.py`) para execução de rotas FastAPI sob o runtime Serverless Python da Vercel.
+
+```
+pulsetriage/
+├── api/
+│   └── index.py            # Entrypoint ASGI para Vercel Serverless
+├── backend/
+│   ├── app/
+│   │   ├── main.py         # Aplicação FastAPI e middlewares de CORS
+│   │   ├── config.py       # Configurações e resolução dinâmica de host
+│   │   ├── database.py     # SQLite resiliente (/tmp em serverless)
+│   │   ├── models.py       # Schemas Pydantic e modelos SQLAlchemy
+│   │   ├── routers/        # Rotas de triagem, Strava e telemetria
+│   │   └── services/       # Motores determinísticos e prompt do Gemini
+│   └── requirements.txt
+├── frontend/
+│   ├── app/                # Rotas, SSR e páginas Next.js
+│   ├── components/         # Cards, modal de exportação, gráficos e comparador
+│   └── lib/                # Clientes de API e cache em localStorage
+└── vercel.json             # Roteamento e builds unificados
+```
+
+---
+
+## 💻 Execução Local
+
+Caso prefira rodar a stack completa na sua máquina de desenvolvimento:
+
+### 1. Pré-requisitos
+* Python 3.11+
+* Node.js 18+
+* Chaves de API do [Google AI Studio](https://aistudio.google.com/) e do [Strava Developers](https://www.strava.com/settings/api).
+
+### 2. Backend
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate  # No Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+# Configure as variáveis no arquivo .env
+# GEMINI_API_KEY=sua_chave
+# STRAVA_CLIENT_ID=seu_id
+# STRAVA_CLIENT_SECRET=seu_secret
+
+python run.py
+```
+O backend responderá em `http://localhost:8000` (documentação Swagger em `/docs`).
+
+### 3. Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Acesse `http://localhost:3000` no seu navegador.
+
+---
+
+## 📄 Licença
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais detalhes.
