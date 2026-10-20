@@ -1,32 +1,59 @@
-# AI Data Triage Agent
+# PulseTriage
 
-Pipeline em Python para ingestao de telemetria, deteccao de anomalias e triagem automatica via LLM com saida estruturada (Structured Outputs com Pydantic e Gemini).
+> Plataforma Web de Telemetria Esportiva & Análise de Prontidão com IA
 
-## Objetivo
-Automatizar a triagem de fluxos de dados continuos (como metricas operacionais e sinais de saude), filtrando leituras anomalas e gerando diagnosticos imediatos em formato JSON validado.
+## Estrutura do Monorepo
 
-## Arquitetura
-1. **Filtro Determinístico**: Identificacao de registros fora do limiar estatistico aceitavel.
-2. **Triagem por IA**: Analise semantica do incidente via Gemini 2.5 Flash.
-3. **Validacao com Pydantic**: Garantia de tipagem e integridade do retorno para consumo em downstream APIs.
+```
+pulsetriage/
+├── backend/          # FastAPI + Python
+│   ├── app/
+│   │   ├── main.py        # Aplicação FastAPI
+│   │   ├── config.py      # Configurações (Pydantic Settings)
+│   │   ├── models.py      # Modelos de domínio (Pydantic v2)
+│   │   └── routers/
+│   │       └── demo.py    # GET /api/v1/demo
+│   ├── mock_activity.json # Dados de treino + sono mockados
+│   ├── requirements.txt
+│   ├── run.py             # Entrada Uvicorn
+│   └── .env.example
+└── frontend/         # Next.js 14+ (Fase 3)
+```
 
-## Como Executar
+## Backend — Setup Rápido
 
-Instale as dependencias:
-\`\`\`bash
+```bash
+cd backend
+python -m venv .venv
+.venv\Scripts\activate          # Windows
+# source .venv/bin/activate     # Linux/Mac
 pip install -r requirements.txt
-\`\`\`
+cp .env.example .env            # Edite com suas chaves
+python run.py
+```
 
-Defina sua chave de API e execute:
-\`\`\`bash
-# Linux/Mac
-export GEMINI_API_KEY="sua_chave"
+API disponível em: http://localhost:8000
+- Documentação interativa: http://localhost:8000/docs
+- Demo endpoint: http://localhost:8000/api/v1/demo
+- Health check: http://localhost:8000/health
 
-# Windows (PowerShell)
-$env:GEMINI_API_KEY="sua_chave"
+## Frontend — Setup Rápido (Fase 3)
 
-# Windows (CMD)
-set GEMINI_API_KEY=sua_chave
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-python agent.py
-\`\`\`
+Frontend disponível em: http://localhost:3000
+
+## Fases de Desenvolvimento
+
+| Fase | Status | Descrição |
+|------|--------|-----------|
+| 1 | ✅ Concluída | Fundação Backend & Mock Estruturado |
+| 2 | ✅ Concluída | Motor de Triagem Determinístico & Gemini |
+| 3 | ✅ Concluída | Fundação Frontend & Boilerplate |
+| 4 | ⏳ Pendente | Dashboard, Gráficos Recharts e Check-in |
+| 5 | ⏳ Pendente | Integração Strava OAuth |
+| 6 | ⏳ Pendente | Polimento e Deploy |

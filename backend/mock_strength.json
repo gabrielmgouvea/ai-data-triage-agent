@@ -1,0 +1,2195 @@
+{
+  "activity_meta": {
+    "id": "mock-strength-102",
+    "name": "Leg Day - For\u00e7a M\u00e1xima",
+    "type": "WeightTraining",
+    "sport_type": "WeightTraining",
+    "start_date": "2026-09-23T06:00:00Z",
+    "elapsed_time_seconds": 1800,
+    "distance_meters": 0.0,
+    "average_heartrate": 105.0,
+    "max_heartrate": 165,
+    "average_speed": 0.0,
+    "total_elevation_gain": 0.0,
+    "athlete_name": "Atleta Demo",
+    "athlete_age": 28,
+    "athlete_max_hr_estimated": 192
+  },
+  "sleep_context": {
+    "recorded_at": "2026-09-23T05:30:00Z",
+    "source": "wearable_mock",
+    "total_sleep_hours": 6.5,
+    "deep_sleep_hours": 1.0,
+    "rem_sleep_hours": 1.5,
+    "light_sleep_hours": 4.0,
+    "sleep_efficiency_percent": 78.0,
+    "resting_heart_rate_bpm": 55,
+    "hrv_rmssd_ms": 35.0,
+    "body_temperature_delta_celsius": 0.2,
+    "subjective_quality_1_to_5": 2,
+    "subjective_fatigue_1_to_5": 4,
+    "notes": "Acordei cansado, dor muscular tardia no quadr\u00edceps."
+  },
+  "telemetry": [
+    {
+      "time_s": 0,
+      "heartrate_bpm": 157,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 5,
+      "heartrate_bpm": 134,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 10,
+      "heartrate_bpm": 134,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 15,
+      "heartrate_bpm": 137,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 20,
+      "heartrate_bpm": 163,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 25,
+      "heartrate_bpm": 162,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 30,
+      "heartrate_bpm": 148,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 35,
+      "heartrate_bpm": 159,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 40,
+      "heartrate_bpm": 147,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 45,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 50,
+      "heartrate_bpm": 103,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 55,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 60,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 65,
+      "heartrate_bpm": 92,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 70,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 75,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 80,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 85,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 90,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 95,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 100,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 105,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 110,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 115,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 120,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 125,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 130,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 135,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 140,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 145,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 150,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 155,
+      "heartrate_bpm": 86,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 160,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 165,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 170,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 175,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 180,
+      "heartrate_bpm": 165,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 185,
+      "heartrate_bpm": 159,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 190,
+      "heartrate_bpm": 161,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 195,
+      "heartrate_bpm": 159,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 200,
+      "heartrate_bpm": 150,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 205,
+      "heartrate_bpm": 152,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 210,
+      "heartrate_bpm": 148,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 215,
+      "heartrate_bpm": 134,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 220,
+      "heartrate_bpm": 149,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 225,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 230,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 235,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 240,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 245,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 250,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 255,
+      "heartrate_bpm": 83,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 260,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 265,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 270,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 275,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 280,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 285,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 290,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 295,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 300,
+      "heartrate_bpm": 93,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 305,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 310,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 315,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 320,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 325,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 330,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 335,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 340,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 345,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 350,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 355,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 360,
+      "heartrate_bpm": 139,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 365,
+      "heartrate_bpm": 159,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 370,
+      "heartrate_bpm": 148,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 375,
+      "heartrate_bpm": 161,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 380,
+      "heartrate_bpm": 151,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 385,
+      "heartrate_bpm": 153,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 390,
+      "heartrate_bpm": 163,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 395,
+      "heartrate_bpm": 142,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 400,
+      "heartrate_bpm": 160,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 405,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 410,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 415,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 420,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 425,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 430,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 435,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 440,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 445,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 450,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 455,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 460,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 465,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 470,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 475,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 480,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 485,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 490,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 495,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 500,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 505,
+      "heartrate_bpm": 103,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 510,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 515,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 520,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 525,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 530,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 535,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 540,
+      "heartrate_bpm": 160,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 545,
+      "heartrate_bpm": 132,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 550,
+      "heartrate_bpm": 164,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 555,
+      "heartrate_bpm": 162,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 560,
+      "heartrate_bpm": 141,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 565,
+      "heartrate_bpm": 155,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 570,
+      "heartrate_bpm": 149,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 575,
+      "heartrate_bpm": 134,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 580,
+      "heartrate_bpm": 150,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 585,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 590,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 595,
+      "heartrate_bpm": 105,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 600,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 605,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 610,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 615,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 620,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 625,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 630,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 635,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 640,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 645,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 650,
+      "heartrate_bpm": 105,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 655,
+      "heartrate_bpm": 83,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 660,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 665,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 670,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 675,
+      "heartrate_bpm": 103,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 680,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 685,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 690,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 695,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 700,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 705,
+      "heartrate_bpm": 83,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 710,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 715,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 720,
+      "heartrate_bpm": 141,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 725,
+      "heartrate_bpm": 164,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 730,
+      "heartrate_bpm": 132,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 735,
+      "heartrate_bpm": 131,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 740,
+      "heartrate_bpm": 137,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 745,
+      "heartrate_bpm": 137,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 750,
+      "heartrate_bpm": 150,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 755,
+      "heartrate_bpm": 155,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 760,
+      "heartrate_bpm": 153,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 765,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 770,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 775,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 780,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 785,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 790,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 795,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 800,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 805,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 810,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 815,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 820,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 825,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 830,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 835,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 840,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 845,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 850,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 855,
+      "heartrate_bpm": 92,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 860,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 865,
+      "heartrate_bpm": 86,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 870,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 875,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 880,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 885,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 890,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 895,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 900,
+      "heartrate_bpm": 152,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 905,
+      "heartrate_bpm": 152,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 910,
+      "heartrate_bpm": 131,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 915,
+      "heartrate_bpm": 163,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 920,
+      "heartrate_bpm": 160,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 925,
+      "heartrate_bpm": 145,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 930,
+      "heartrate_bpm": 164,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 935,
+      "heartrate_bpm": 147,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 940,
+      "heartrate_bpm": 156,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 945,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 950,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 955,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 960,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 965,
+      "heartrate_bpm": 92,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 970,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 975,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 980,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 985,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 990,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 995,
+      "heartrate_bpm": 86,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1000,
+      "heartrate_bpm": 92,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1005,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1010,
+      "heartrate_bpm": 92,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1015,
+      "heartrate_bpm": 103,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1020,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1025,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1030,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1035,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1040,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1045,
+      "heartrate_bpm": 83,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1050,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1055,
+      "heartrate_bpm": 86,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1060,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1065,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1070,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1075,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1080,
+      "heartrate_bpm": 144,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1085,
+      "heartrate_bpm": 158,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1090,
+      "heartrate_bpm": 149,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1095,
+      "heartrate_bpm": 148,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1100,
+      "heartrate_bpm": 161,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1105,
+      "heartrate_bpm": 164,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1110,
+      "heartrate_bpm": 144,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1115,
+      "heartrate_bpm": 142,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1120,
+      "heartrate_bpm": 156,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1125,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1130,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1135,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1140,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1145,
+      "heartrate_bpm": 103,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1150,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1155,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1160,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1165,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1170,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1175,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1180,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1185,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1190,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1195,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1200,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1205,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1210,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1215,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1220,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1225,
+      "heartrate_bpm": 105,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1230,
+      "heartrate_bpm": 105,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1235,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1240,
+      "heartrate_bpm": 105,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1245,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1250,
+      "heartrate_bpm": 93,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1255,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1260,
+      "heartrate_bpm": 164,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1265,
+      "heartrate_bpm": 130,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1270,
+      "heartrate_bpm": 133,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1275,
+      "heartrate_bpm": 146,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1280,
+      "heartrate_bpm": 153,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1285,
+      "heartrate_bpm": 154,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1290,
+      "heartrate_bpm": 148,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1295,
+      "heartrate_bpm": 159,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1300,
+      "heartrate_bpm": 131,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1305,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1310,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1315,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1320,
+      "heartrate_bpm": 93,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1325,
+      "heartrate_bpm": 105,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1330,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1335,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1340,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1345,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1350,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1355,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1360,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1365,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1370,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1375,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1380,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1385,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1390,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1395,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1400,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1405,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1410,
+      "heartrate_bpm": 93,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1415,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1420,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1425,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1430,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1435,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1440,
+      "heartrate_bpm": 133,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1445,
+      "heartrate_bpm": 162,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1450,
+      "heartrate_bpm": 161,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1455,
+      "heartrate_bpm": 164,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1460,
+      "heartrate_bpm": 150,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1465,
+      "heartrate_bpm": 130,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1470,
+      "heartrate_bpm": 132,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1475,
+      "heartrate_bpm": 150,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1480,
+      "heartrate_bpm": 135,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1485,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1490,
+      "heartrate_bpm": 84,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1495,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1500,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1505,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1510,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1515,
+      "heartrate_bpm": 103,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1520,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1525,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1530,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1535,
+      "heartrate_bpm": 86,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1540,
+      "heartrate_bpm": 93,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1545,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1550,
+      "heartrate_bpm": 86,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1555,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1560,
+      "heartrate_bpm": 98,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1565,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1570,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1575,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1580,
+      "heartrate_bpm": 83,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1585,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1590,
+      "heartrate_bpm": 90,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1595,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1600,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1605,
+      "heartrate_bpm": 101,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1610,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1615,
+      "heartrate_bpm": 85,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1620,
+      "heartrate_bpm": 138,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1625,
+      "heartrate_bpm": 150,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1630,
+      "heartrate_bpm": 132,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1635,
+      "heartrate_bpm": 154,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1640,
+      "heartrate_bpm": 147,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1645,
+      "heartrate_bpm": 141,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1650,
+      "heartrate_bpm": 134,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1655,
+      "heartrate_bpm": 153,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1660,
+      "heartrate_bpm": 164,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1665,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1670,
+      "heartrate_bpm": 99,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1675,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1680,
+      "heartrate_bpm": 97,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1685,
+      "heartrate_bpm": 102,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1690,
+      "heartrate_bpm": 88,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1695,
+      "heartrate_bpm": 82,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1700,
+      "heartrate_bpm": 104,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1705,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1710,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1715,
+      "heartrate_bpm": 92,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1720,
+      "heartrate_bpm": 81,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1725,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1730,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1735,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1740,
+      "heartrate_bpm": 87,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1745,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1750,
+      "heartrate_bpm": 96,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1755,
+      "heartrate_bpm": 86,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1760,
+      "heartrate_bpm": 83,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1765,
+      "heartrate_bpm": 95,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1770,
+      "heartrate_bpm": 100,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1775,
+      "heartrate_bpm": 91,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1780,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1785,
+      "heartrate_bpm": 94,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1790,
+      "heartrate_bpm": 80,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    },
+    {
+      "time_s": 1795,
+      "heartrate_bpm": 89,
+      "velocity_ms": 0.0,
+      "altitude_m": 0.0
+    }
+  ]
+}

@@ -1,5 +1,32 @@
-venv/
+# Dependencies & Virtual Environments
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+backend/.venv/
 .venv/
+venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Environment variables
 .env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Local SQLite database & caches
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+pulsetriage.db
+backend/pulsetriage.db
+
+# Vercel & IDE
+.vercel/
+.DS_Store
+Thumbs.db
